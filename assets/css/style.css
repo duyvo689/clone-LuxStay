@@ -18,9 +18,6 @@ html {
     line-height: 1.6rem;
     font-family: 'roboto', sans-serif;
     box-sizing : border-box;
-
-
-    background: rgb(168, 167, 160);
 }
 
 section {
@@ -508,17 +505,20 @@ section {
     height       : 167px;
     border-radius: 5px;
     position     : relative;
+
 }
 
 /* Promotions end */
 
 /* HCMC start */
 .HCMC-cover {
-    display   : block;
     width     : 290px !important;
+    height    : 167px;
     height    : auto;
     padding   : 0 4px;
     margin-top: 40px;
+    display   : flex;
+
 }
 
 .HCMC-img {
@@ -546,3 +546,96 @@ section {
 }
 
 /* HCMC end */
+
+/* payment start */
+.payment-item {
+    width  : 390px !important;
+    height : 212px;
+    height : auto;
+    padding: 0 4px;
+    display: flex;
+}
+
+.payment-img {
+    width : 382px !important;
+    height: 212px !important;
+}
+
+/* payment end */
+
+/* store start */
+.store {
+    display   : flex;
+    margin-top: 80px;
+}
+
+.store-left {
+    flex: 1;
+}
+
+.store-left svg {
+    width: 342px;
+}
+
+.store-title {
+    font-size  : 26px;
+    font-weight: 600;
+    padding    : 20px 0;
+}
+
+.store-desc {
+    font-size   : 14px;
+    font-weight : 300;
+    margin-right: 200px;
+}
+
+.store-left-img {
+    display        : flex;
+    margin-top     : 20px;
+    justify-content: space-between;
+}
+
+.img-1 {
+    width: 208px;
+
+}
+
+.img-2 {
+    margin-right: 10px;
+    width       : 300px;
+
+}
+
+.store-right {
+    flex: 1;
+}
+
+.store-right img {
+    width : 579px;
+    height: 535px;
+}
+
+/* foodter */
+.fooder {
+    display: flex;
+}
+
+.lux-stay {
+    flex: 1;
+}
+
+.destination {
+    flex: 1;
+}
+
+.footer-title {
+    font-size  : 16px;
+    font-weight: 500px;
+    background : crimson;
+}
+
+.footer-title ul {
+    display: block;
+}
+
+/* foodter */
