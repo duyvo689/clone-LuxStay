@@ -1,5 +1,5 @@
 :root {
-    --primary-color       : #ee4d2d;
+    --primary-color       : #ffff;
     --white-color         : #fff;
     --black-color         : #000;
     --text-color          : #333;
@@ -20,14 +20,182 @@ html {
     box-sizing : border-box;
 }
 
-.section {
+section {
     width    : 1200px;
     max-width: 100%;
     margin   : 0 auto;
+    padding  : 0 4%;
 }
 
-.header {
-    width     : 100%;
-    height    : 5rem;
-    background: rgb(240, 234, 234);
+.nav {
+    width          : 100%;
+    height         : 80px;
+    background     : var(--primary-color);
+    display        : flex;
+    justify-content: space-between;
+    border-bottom  : 1px solid #f2f2f2;
+    position       : fixed;
+    z-index        : 1;
+    top            : 0;
+    align-items    : center;
+    font-size      : 14px;
+}
+
+.nav .nav-left {
+    display: flex;
+}
+
+.nav .nav-left a {
+    display      : flex;
+    padding      : 10px;
+    background   : rgba(0, 0, 0, .04);
+    border-radius: 50%;
+    align-items  : center;
+}
+
+.nav .search-box {
+    display      : flex;
+    margin-left  : 3rem;
+    align-items  : center;
+    box-shadow   : 1px 1px 4px rgb(0 0 0 / 20%);
+    border-radius: 5px;
+    width        : 600px;
+    height       : 48px;
+    align-items  : center;
+    margin       : auto 0 auto 26px;
+}
+
+.nav .search-box .search {
+    display : flex;
+    position: relative;
+    padding : 17px 16px;
+    width   : 300px;
+}
+
+.nav .search-box .search::before {
+    content   : "";
+    position  : absolute;
+    width     : 1px;
+    height    : 80%;
+    top       : 50%;
+    background: #e7e7e7;
+    transform : translateY(-50%);
+    z-index   : 2;
+    right     : 0;
+}
+
+.nav .search-box .search .search-input {
+    position: relative;
+    border  : none;
+    width   : 100%;
+}
+
+.nav .search-input-icon {
+    position: absolute;
+    margin  : auto;
+}
+
+.nav .search-input-icon i {
+    padding     : 0 0.2rem;
+    font-size   : 15px;
+    margin-right: 10px;
+    color       : #6666;
+}
+
+.nav .search-input-icon span {
+    font-size: 1rem;
+    font-size: 14px;
+}
+
+.nav .search-box .dates {
+    padding : 17px 28px;
+    position: relative;
+}
+
+.nav .search-box .dates::before {
+    content   : "";
+    position  : absolute;
+    width     : 1px;
+    height    : 66%;
+    top       : 50%;
+    background: #e7e7e7;
+    transform : translateY(-50%);
+    z-index   : 2;
+    right     : 0;
+}
+
+.nav .search-box .dates i {
+    font-size   : 14px;
+    color       : #6666;
+    margin-right: 10px;
+}
+
+.nav .search-box .dates span {
+    font-size: 14px;
+}
+
+.nav .search-box .guests {
+    padding: 2rem;
+}
+
+.nav .search-box .guests i {
+    font-size   : 14px;
+    color       : #6666;
+    margin-right: 8px;
+}
+
+.nav .search-box .guests span {
+    font-size: 14px;
+}
+
+.nav .search-box .search-icon {
+    right        : 0;
+    margin       : auto;
+    padding      : 10px 22px;
+    background   : #555555;
+    border-radius: 5px;
+}
+
+.nav .search-box .search-icon i {
+    color    : #fff;
+    font-size: 16px;
+}
+
+.nav .nav-right {
+    display    : flex;
+    font-weight: 500;
+}
+
+.nav-select a {
+    padding: 0 1.2rem;
+}
+
+.nav .flag-monney {
+    display      : flex;
+    padding      : 0 0.4rem 0 0.6rem;
+    background   : #F6F6F6;
+    align-items  : center;
+    border-radius: 16px;
+    height       : 32px;
+    margin       : auto;
+}
+
+.nav .flag-monney svg {
+    width : 24px;
+    height: auto;
+}
+
+.nav .flag-monney span {
+    padding    : 0 0 0 .8rem;
+    font-weight: 400;
+    align-items: center;
+    margin     : auto;
+
+}
+
+.nav .flag-monney i {
+    padding    : 0 0 0 .6rem;
+    align-items: center;
+    margin     : auto;
+
 }
