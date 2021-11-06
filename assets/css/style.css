@@ -18,6 +18,9 @@ html {
     line-height: 1.6rem;
     font-family: 'roboto', sans-serif;
     box-sizing : border-box;
+
+
+    background: rgb(168, 167, 160);
 }
 
 section {
@@ -28,17 +31,51 @@ section {
 }
 
 .title {
-    margin-top : 36px;
+    margin-top : 50px;
     font-size  : 26px;
     font-weight: 700;
     color      : 222222;
 }
 
 .desc {
-    margin-top : 22px;
-    font-size  : 14px;
-    font-weight: 300;
-    color      : var(--text-color);
+    margin-top   : 24px;
+    margin-bottom: 24px;
+    font-size    : 14px;
+    font-weight  : 300;
+    color        : var(--text-color);
+}
+
+.slick-track {
+    width: 29024px !important;
+}
+
+.slick-next {
+    margin-right: 54px !important;
+}
+
+.slick-next:before {
+    font-size  : 60px !important;
+    color      : #ffff !important;
+    line-height: 0 !important;
+    display    : flex !important;
+    top        : 50% !important;
+    transform  : translate(-0, -50%) !important;
+    left       : 50% !important;
+}
+
+.slick-prev {
+    margin-left: 12px !important;
+    z-index    : 2 !important;
+}
+
+.slick-prev:before {
+    font-size  : 60px !important;
+    color      : #ffff !important;
+    line-height: 0 !important;
+    display    : flex !important;
+    top        : 50% !important;
+    transform  : translate(-0, -50%) !important;
+    left       : 50% !important;
 }
 
 .nav {
@@ -441,7 +478,7 @@ section {
 .destination-title {
     position   : absolute;
     bottom     : 0;
-    line-height: 30px;
+    line-height: 32px;
 }
 
 .destination-name {
@@ -455,31 +492,57 @@ section {
     color      : #ffff;
 }
 
-.slick-next {
-    margin-right: 54px !important;
+/* Promotions start */
+
+.promotion-item {
+    width   : 398px !important;
+    height  : 167px;
+    padding : 0 4px;
+    display : flex;
+    position: relative;
+
 }
 
-.slick-next:before {
-    font-size  : 60px !important;
-    color      : #ffff !important;
-    line-height: 0 !important;
-    display    : flex !important;
-    top        : 50% !important;
-    transform  : translate(-0, -50%) !important;
-    left       : 50% !important;
+.promotion-img {
+    width        : 381px;
+    height       : 167px;
+    border-radius: 5px;
+    position     : relative;
 }
 
-.slick-prev {
-    margin-left: 12px !important;
-    z-index    : 2 !important;
+/* Promotions end */
+
+/* HCMC start */
+.HCMC-cover {
+    display   : block;
+    width     : 290px !important;
+    height    : auto;
+    padding   : 0 4px;
+    margin-top: 40px;
 }
 
-.slick-prev:before {
-    font-size  : 60px !important;
-    color      : #ffff !important;
-    line-height: 0 !important;
-    display    : flex !important;
-    top        : 50% !important;
-    transform  : translate(-0, -50%) !important;
-    left       : 50% !important;
+.HCMC-img {
+    width : 284px !important;
+    height: 177px !important;
 }
+
+.HCMC-title {
+    font-size     : 15px;
+    font-weight   : 400;
+    color         : var(--text-color);
+    text-transform: uppercase;
+    padding       : 10px 0;
+
+}
+
+.HCMC-desc {
+    font-size         : 14px;
+    font-weight       : 300;
+    color             : var(--text-color);
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow          : hidden;
+    display           : -webkit-box;
+}
+
+/* HCMC end */
