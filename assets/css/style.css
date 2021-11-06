@@ -617,25 +617,72 @@ section {
 
 /* foodter */
 .fooder {
-    display: flex;
+    display   : flex;
+    margin-top: 60px;
 }
 
 .lux-stay {
     flex: 1;
 }
 
-.destination {
+/* 
+.address {
     flex: 1;
 }
 
+.contract {
+    flex: 1;
+}
+
+.way {
+    flex: 1;
+} */
+
+.address,
+.contract,
+.way,
+.find {
+    flex: 1;
+}
+
+.address,
+.contract,
+.way,
+.find,
 .footer-title {
     font-size  : 16px;
-    font-weight: 500px;
-    background : crimson;
+    font-weight: 700px;
 }
 
 .footer-title ul {
     display: block;
+}
+
+.fooder-desc-item {
+    padding        : 10px;
+    font-size      : 14px;
+    color          : var(--text-color);
+    text-decoration: none;
+    list-style     : none;
+}
+
+.find .footer-img-1 {
+    width  : 80px;
+    padding: 2px;
+}
+
+.find .footer-img-2 {
+    width: 100px;
+}
+
+.footer-end {
+    padding    : 18px 6%;
+    color      : #999999;
+    font-size  : 14px;
+    font-weight: 300;
+    text-align : center;
+    border-top : 1px solid #9999;
+    line-height: 30px;
 }
 
 /* foodter */
