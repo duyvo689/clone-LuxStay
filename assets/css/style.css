@@ -51,6 +51,7 @@ section {
     background   : rgba(0, 0, 0, .04);
     border-radius: 50%;
     align-items  : center;
+    cursor       : pointer;
 }
 
 .nav .search-box {
@@ -63,6 +64,7 @@ section {
     height       : 48px;
     align-items  : center;
     margin       : auto 0 auto 26px;
+    cursor       : pointer;
 }
 
 .nav .search-box .search {
@@ -88,6 +90,7 @@ section {
     position: relative;
     border  : none;
     width   : 100%;
+    outline : none;
 }
 
 .nav .search-input-icon {
@@ -168,16 +171,36 @@ section {
 
 .nav-select a {
     padding: 0 1.2rem;
+    cursor : pointer;
 }
 
 .nav .flag-monney {
     display      : flex;
     padding      : 0 0.4rem 0 0.6rem;
     background   : #F6F6F6;
-    align-items  : center;
     border-radius: 16px;
     height       : 32px;
     margin       : auto;
+    cursor       : pointer;
+    position     : relative;
+    align-items  : center;
+}
+
+.nav .flag-monney:hover .model-flag-monney {
+    display  : flex;
+    animation: mymove 0.3s;
+}
+
+@keyframes mymove {
+    0% {
+        top    : -110px;
+        opacity: 0;
+    }
+
+    100% {
+        top    : -119px;
+        opacity: 1;
+    }
 }
 
 .nav .flag-monney svg {
@@ -185,7 +208,7 @@ section {
     height: auto;
 }
 
-.nav .flag-monney span {
+.nav .flag-monney .monney {
     padding    : 0 0 0 .8rem;
     font-weight: 400;
     align-items: center;
@@ -198,4 +221,67 @@ section {
     align-items: center;
     margin     : auto;
 
+}
+
+.model-flag-monney {
+    position     : absolute;
+    display      : none;
+    margin-top   : 163px;
+    min-width    : 400px;
+    right        : 0;
+    border       : 1px solid #D6D6D6;
+    background   : #ffff;
+    border-radius: 4px;
+}
+
+.model-flag-monney::before {
+    background            : #fff;
+    position              : absolute;
+    content               : "";
+    top                   : -0.8rem;
+    right                 : 2rem;
+    transform             : rotate(45deg);
+    height                : 1.6rem;
+    width                 : 1.6rem;
+    border-top-left-radius: 3px;
+    box-shadow            : 0 0 0 1px rgb(6 44 82 / 10%), 0 2px 16px rgb(33 43 54 / 8%);
+    z-index               : -1;
+}
+
+
+.model-flag {
+    flex: 1;
+
+}
+
+.model-flag-item {
+    padding     : 18px;
+    display     : flex;
+    font-weight : 400;
+    border-right: 1px solid #D6D6D6;
+}
+
+.model-flag-item svg {
+    width: 16px !important;
+}
+
+.model-flag-item span {
+    margin-left: 10px;
+}
+
+.model-monney {
+    flex: 1;
+}
+
+.model-monney-item {
+    padding: 18px;
+    display: flex;
+}
+
+.model-monney-item .monney-icon {}
+
+.model-monney-item .monney-desc {
+    margin-left: 10px;
+    font-weight: 400;
+    margin     : auto;
 }
